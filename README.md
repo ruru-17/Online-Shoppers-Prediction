@@ -1,5 +1,5 @@
 # Online Shopper Conversion Prediction  
-This project was done for an assignment in the course MTL782 Data Mning, Spring Semester 2024-25.
+This project was done for an assignment in the course MTL782 Data Mining, Spring Semester 2024-25.
 
 The objective of this project is to predict whether an online shopper will make a purchase based on their activity and historical user trends.
 
