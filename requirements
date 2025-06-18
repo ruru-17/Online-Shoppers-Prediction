@@ -1,0 +1,5 @@
+pandas>=2.0
+numpy>=1.23
+matplotlib>=3.5
+ydata-profiling>=4.16.1
+scikit-learn>=1.6
