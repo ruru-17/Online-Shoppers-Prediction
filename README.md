@@ -1,16 +1,39 @@
-# Online Shopper Conversion Prediction  
-This project was done for an assignment in the course MTL782 Data Mining, Spring Semester 2024-25 at IIT Delhi.
+# Online Shopper Conversion Prediction
 
-The objective of this project is to predict whether an online shopper will make a purchase based on their activity and historical user trends.
+Course project for MTL782 Data Mining (IIT Delhi, Spring 2024–25). The goal is to predict whether an online shopping session results in a purchase using session activity features. The evaluation metric is F1-score.
 
-It has 2 parts: 
-1) Non-Competitive
-2) Competitve  
+## Contents
+- `Non_comp_notebook.ipynb` — non-competitive track (restricted models/feature engineering).
+- `Comp_Notebook.ipynb` — competitive track (Kaggle run).
+- `Project_Report.pdf` — methodology, experiments, and results.
+- `MTL782-A1.pdf` — assignment statement and rules.
+- `requirements.txt` — base Python dependencies.
 
-The Non-competitive parts had several restrictions regarding allowed model and feature engineering, whereas in the Competitive part we had more freedom. Refer to MTL782-A1.pdf for complete problem statement.  
+## Data
+The dataset is not included in this repository. The notebooks expect the following files from the assignment/Kaggle data:
+- `kaggle_train.csv`
+- `kaggle_test.csv` (if evaluating on a test set)
+- `metadata.txt`
 
-See Non_comp_notebook.ipynb for code of Non-competitive part.
+Paths used in notebooks:
+- `Non_comp_notebook.ipynb` reads `data/kaggle_train.csv` by default. Place the files under `data/` or update the path.
+- `Comp_Notebook.ipynb` uses Kaggle input paths (`/kaggle/input/...`). Update paths when running locally.
 
-See Comp_notebook for code of Competitive part.
+## Setup
+1. Create and activate a Python environment.
+2. Install base requirements:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Install notebook tooling (for example, `jupyterlab`) and any extra dependencies needed for the competitive notebook:
+   - `xgboost`
+   - `imbalanced-learn`
+   - `scikit-optimize`
 
-Refer to Project_Report.pdf for detailed project report.
+## Running
+Open the notebooks in Jupyter and run all cells:
+- `Non_comp_notebook.ipynb`
+- `Comp_Notebook.ipynb`
+
+## Notes
+The competitive notebook was developed on Kaggle and may require path and environment adjustments when run locally. See `Project_Report.pdf` for full methodology and results.
